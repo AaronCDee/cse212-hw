@@ -10,10 +10,15 @@ public static class Arrays
     /// <returns>array of doubles that are the multiples of the supplied number</returns>
     public static double[] MultiplesOf(double number, int length)
     {
-        // Step 1: Define a new array of length {length}
-        // Step 2: Loop {length} times
-        // Step 3: Set the value at the iteration index in the array to (number * i)
-        // Step 4: Return the multiples
+        // Plan
+        // Define a new array of length {length}
+        // Iterate {length} times
+
+        // BEGIN Iteration
+        // Set the value at the iteration index in the array to (number * i)
+        // END Iteration
+
+        // Return the multiples
 
         double[] multiples = new double[length];
 
@@ -32,10 +37,14 @@ public static class Arrays
     /// </summary>
     public static void RotateListRight(List<int> data, int amount)
     {
-        // Step 1: Iterate amount times
-        // Step 2: Store the last item of the list in a variable
-        // Step 3: Remove the last item of the list
-        // Step 4: Add the stored item to the start of the list
+        // Plan:
+        // Iterate {amount} times
+
+        // BEGIN Iteration
+        // Store the last item of the list in a variable
+        // Remove the last item of the list
+        // Add the stored item to the start of the list
+        // END Iteration
 
         for (int i = 0; i < amount; i++)
         {
