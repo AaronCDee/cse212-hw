@@ -150,11 +150,13 @@ public static class Recursion
             return;
         }
 
-        string withZero = pattern[..index] + "0" + pattern[(index + 1)..];
-        WildcardBinary(withZero, results);
+        char[] zeroCharArr = pattern.ToCharArray();
+        zeroCharArr[index] = '0';
+        WildcardBinary(new string(zeroCharArr), results);
 
-        string withOne = pattern[..index] + "1" + pattern[(index + 1)..];
-        WildcardBinary(withOne, results);
+        char[] oneCharArr = pattern.ToCharArray();
+        oneCharArr[index] = '1';
+        WildcardBinary(new string(oneCharArr), results);
     }
 
     /// <summary>
